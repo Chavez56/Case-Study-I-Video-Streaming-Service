@@ -24,6 +24,7 @@ Each plan has the benefit and price provided in this table:
 
 - Check benefit and price of each plan
 - Check current plan and its benefit for existing or new user
+- **User can upgrade plan only**
 - Upgrade plan for existing user. **If duration subscribed plan greater than 12 months, existing user can get discount 5%**
 - Register data and choose plan for new user. **If new user has an valid referral code, new user can get discount 4%**
 
