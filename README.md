@@ -22,17 +22,18 @@ Each plan has the benefit and price provided in this table:
 
 ## 2. Features Requirement
 
-- Check benefit and price of each plan
-- Check current plan and its benefit for existing or new user
+- Check benefit and price of each plan for new user
+- Check current plan and its benefit for existing user
 - **User can upgrade plan only**
 - Upgrade plan for existing user. **If duration subscribed plan greater than 12 months, existing user can get discount 5%**
 - Register data and choose plan for new user. **If new user has an valid referral code, new user can get discount 4%**
 
 ## 3. Data
 
+The given data is dictionary type containing:
 - Username
-- Active plan
+- Active/Current plan
 - Duration plan
 - Referral code
 
-#### *Documentation created by Muhammad Chavez Assad Patriot*
+#### *Documentation and Program Script created by Muhammad Chavez Assad Patriot*
