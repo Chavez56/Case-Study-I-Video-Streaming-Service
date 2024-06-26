@@ -79,8 +79,8 @@ class New_User:
         self.content_5 = ['UHD Quality', ' ', ' ', '✓']
         self.content_6 = ['Number of Devices', 1, 2, 4]
         self.content_7 = ['Content', "3rd party movie only", 
-                          "Basic Plan Content \n+ \nSports \n(F1, Football, Basketball)", 
-                          "Basic Plan \n+ \nStandard Plan \n+ \nPacFlix Original Series or Movie" 
+                          "Basic Plan Content \n + \nSports \n(F1, Football, Basketball)", 
+                          "Basic Plan \n + \nStandard Plan \n + \nPacFlix Original Series or Movie" 
                           ]
         self.content_8 = ['Price', f"Rp {120_000},-", f"Rp {160_000},-", f"Rp {200_000},-"]
 
@@ -121,15 +121,15 @@ class New_User:
                 if self.new_plan in data_converted:
                     if self.new_plan == "Basic Plan":
                         price = int(self.content_8[1].replace('Rp','').replace(',-','')) - New_User.DISCOUNT * int(self.content_8[1].replace('Rp','').replace(',-',''))
-                        print(f"Total Price: Rp {int(price)},-")
+                        print(f"Total Price for {self.new_plan} with Referral Code '{self.referral_code}': Rp {int(price)},-")
 
                     elif self.new_plan == "Standard Plan":
                         price = int(self.content_8[2].replace('Rp','').replace(',-','')) - New_User.DISCOUNT * int(self.content_8[2].replace('Rp','').replace(',-',''))
-                        print(f"Total Price: Rp {int(price)},-")
+                        print(f"Total Price for {self.new_plan} with Referral Code '{self.referral_code}': Rp {int(price)},-")
 
                     elif self.new_plan == "Premium Plan":
                         price = int(self.content_8[3].replace('Rp','').replace(',-','')) - New_User.DISCOUNT * int(self.content_8[3].replace('Rp','').replace(',-',''))
-                        print(f"Total Price: Rp {int(price)},-")
+                        print(f"Total Price for {self.new_plan} with Referral Code '{self.referral_code}': Rp {int(price)},-")
 
                     else:
                         print("Your plan is not exist!")
@@ -144,15 +144,15 @@ class New_User:
             if self.new_plan in data_converted:
                 if self.new_plan == "Basic Plan":
                     price = int(self.content_8[1].replace('Rp','').replace(',-',''))
-                    print(f"Total Price: Rp {int(price)},-")
+                    print(f"Total Price for {self.new_plan} without Referral Code: Rp {int(price)},-")
 
                 elif self.new_plan == "Standard Plan":
                     price = int(self.content_8[2].replace('Rp','').replace(',-','')) 
-                    print(f"Total Price: Rp {int(price)},-")
+                    print(f"Total Price for {self.new_plan} without Referral Code: Rp {int(price)},-")
 
                 elif self.new_plan == "Premium Plan":
                     price = int(self.content_8[3].replace('Rp','').replace(',-',''))
-                    print(f"Total Price: Rp {int(price)},-")
+                    print(f"Total Price for {self.new_plan} without Referral Code: Rp {int(price)},-")
 
                 else:
                     print("Your plan is not exist!")

@@ -78,8 +78,8 @@ class User:
         self.content_5 = ['UHD Quality', ' ', ' ', '✓']
         self.content_6 = ['Number of Devices', 1, 2, 4]
         self.content_7 = ['Content', "3rd party movie only", 
-                          "Basic Plan Content \n+ \nSports \n(F1, Football, Basketball)", 
-                          "Basic Plan \n+ \nStandard Plan \n+ \nPacFlix Original Series or Movie" 
+                          "Basic Plan Content \n + \nSports \n(F1, Football, Basketball)", 
+                          "Basic Plan \n + \nStandard Plan \n + \nPacFlix Original Series or Movie" 
                           ]
         self.content_8 = ['Price', f"Rp {120_000},-", f"Rp {160_000},-", f"Rp {200_000},-"]
 
@@ -113,34 +113,31 @@ class User:
 
             if self.current_plan == "Basic":
                 print(f"Current Plan: {self.current_plan} Plan")
-                print()
                 print(f"Duration Plan: {self.duration_plan} months")
                 print()
-                print(f"{self.current_plan} Pacflix Benefit List")
+                print(f"{self.current_plan} Plan Benefit")
                 print("----------------------------------------------")
-                col_name = ["Services",self.current_plan]
+                col_name = ["Services",f"{self.current_plan} Plan"]
                 benefit_list = [[self.table_content[i][0],self.table_content[i][1]] for i in range(len(self.table_content))]
                 print(tabulate(benefit_list, col_name,tablefmt="fancy_grid",colalign=('center','center')))
 
             elif self.current_plan == "Standard":
                 print(f"Current Plan: {self.current_plan} Plan")
-                print()
                 print(f"Duration Plan: {self.duration_plan} months")
                 print()
-                print(f"{self.current_plan} Pacflix Benefit List")
+                print(f"{self.current_plan} Plan Benefit")
                 print("----------------------------------------------")
-                col_name = ["Services",self.current_plan]
+                col_name = ["Services",f"{self.current_plan} Plan"]
                 benefit_list = [[self.table_content[i][0],self.table_content[i][2]] for i in range(len(self.table_content))]
                 print(tabulate(benefit_list, col_name,tablefmt="fancy_grid",colalign=('center','center')))
 
             elif self.current_plan == "Premium":
                 print(f"Current Plan: {self.current_plan} Plan")
-                print()
                 print(f"Duration Plan: {self.duration_plan} months")
                 print()
-                print(f"{self.current_plan} Pacflix Benefit List")
+                print(f"{self.current_plan} Plan Benefit")
                 print("----------------------------------------------")
-                col_name = ["Services",self.current_plan]
+                col_name = ["Services",f"{self.current_plan} Plan"]
                 benefit_list = [[self.table_content[i][0],self.table_content[i][3]] for i in range(len(self.table_content))]
                 print(tabulate(benefit_list, col_name,tablefmt="fancy_grid",colalign=('center','center')))
 
@@ -178,21 +175,21 @@ class User:
 
                         if self.duration_plan <= 12:
                              price = int(self.content_8[2].replace('Rp','').replace(',-',''))
-                             print(f"Total Price: Rp {int(price)},-")
+                             print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                         elif self.duration_plan > 12:
                             price = int(self.content_8[2].replace('Rp','').replace(',-','')) - User.DISCOUNT * int(self.content_8[2].replace('Rp','').replace(',-',''))
-                            print(f"Total Price: Rp {int(price)},-")
+                            print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                     elif self.new_plan == "Premium":
 
                         if self.duration_plan <= 12:
                             price = int(self.content_8[3].replace('Rp','').replace(',-',''))
-                            print(f"Total Price: Rp {int(price)},-")
+                            print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                         elif self.duration_plan > 12:
                             price = int(self.content_8[3].replace('Rp','').replace(',-','')) - User.DISCOUNT * int(self.content_8[3].replace('Rp','').replace(',-',''))
-                            print(f"Total Price: Rp {int(price)},-")
+                            print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                         elif self.new_plan == "Basic":
                             print("Your new plan is same to current plan")
@@ -203,11 +200,11 @@ class User:
 
                         if self.duration_plan <= 12:
                             price = int(self.content_8[3].replace('Rp','').replace(',-',''))
-                            print(f"Total Price: Rp {int(price)},-")
+                            print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                         elif self.duration_plan > 12:
                             price = int(self.content_8[3].replace('Rp','').replace(',-','')) - User.DISCOUNT * int(self.content_8[3].replace('Rp','').replace(',-',''))
-                            print(f"Total Price: Rp {int(price)},-")
+                            print(f"Total Price for {self.new_plan} Plan: Rp {int(price)},-")
 
                     elif self.new_plan == "Standard":
                         print("Your new plan is same to current plan")
