@@ -1,7 +1,6 @@
 # Import package
 from tabulate import tabulate
 
-
 # Username data
 data = {
     "Shandy": ["Basic Plan", 12, "shandy-2134"],
