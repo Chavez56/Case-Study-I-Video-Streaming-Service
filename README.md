@@ -30,7 +30,7 @@ Each plan has the benefit and price provided in this table:
 
 ## 3. Data
 
-The given data is dictionary type containing:
+The user data is dictionary type containing:
 - Username
 - Active/Current plan
 - Duration plan
@@ -38,6 +38,41 @@ The given data is dictionary type containing:
 
 ## 4. Test Case
 
-----------------------------------------
+#### 1. Existing User
 
+- Check current plan and its benefit
+
+  -> User **Shandy**
+  
+  ![Alt text](screenshot/test1.png)
+
+  ![Alt text](screenshot/test2.png)
+
+  -> User **Cahya**
+
+  ![Alt text](screenshot/test3.png)
+
+  ![Alt text](screenshot/test4.png)
+
+- Upgrade plan
+
+  -> User **Shandy** upgrade from Basic to Standard Plan
+
+  ![Alt text](screenshot/test2.png)
+
+  -> User **Cahya** upgrade from Standard to Premium Plan
+
+  ![Alt text](screenshot/test4.png)
+
+#### 2. New User
+
+- Register Data, then check benefit and price of each plan
+
+  ![Alt text](screenshot/test5.png)
+
+- Choose plan (without and with valid referral code and invalid referral code)
+
+  ![Alt text](screenshot/test6.png)
+
+  
 **Author** Copyright (c) *2024 Muhammad Chavez Assad Patriot*
