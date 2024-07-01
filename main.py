@@ -14,6 +14,7 @@ data = {
 print("EXISTING USER")
 print("--------------")
 
+
 # Calling class and defining each parameter
 user_1 = User(username="Shandy", duration_plan=data["Shandy"][1], current_plan=data["Shandy"][0].replace(" ","").replace("Plan",""))
 
