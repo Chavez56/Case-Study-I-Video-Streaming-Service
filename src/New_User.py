@@ -1,7 +1,6 @@
 # Import package
 from tabulate import tabulate
 
-
 # Convert dictionary data to list data
 data = {
     "Shandy": ["Basic Plan", 12, "shandy-2134"],
